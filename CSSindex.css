@@ -1,6 +1,8 @@
 /*Encabezado header*/
 .Header{
+  background-color: black;
+}
+.Titulo1{
   margin-left: auto;
   margin-right: auto;
-   background-color: black;
 }
