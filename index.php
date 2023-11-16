@@ -19,7 +19,7 @@
                 </button>
               
                 <button class="button type3">
-                    Boton2
+                    Boton22
                 </button>
                 
                 <button class="button type3">
