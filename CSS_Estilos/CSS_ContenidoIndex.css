@@ -1,0 +1,12 @@
+
+
+.Bloque2_ContenidoIndex{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.Bloque2_ContenidoIndex div{
+ border: solid;
+}
+.CabezaIndex img{
+max-width: 100%;
+}
