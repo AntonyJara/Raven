@@ -1,1 +1,11 @@
+/*Encabezado header*/
+.Header{
+    background-color: blue;
+    display: flex;
+  }
+  .Titulo1{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
