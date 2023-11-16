@@ -1,11 +1,79 @@
 /*Encabezado header*/
 .Header{
-    background-color: blue;
-    display: flex;
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    display: grid;
+    grid-template-columns: 10% 90%;
   }
-  .Titulo1{
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
+  .logo_header{
+    border: solid;
+   max-width: 100%;
+  }
+  .logo_header img{
+    max-width: 100%;
+   
+  }
+.Cont_Button{
 
+  margin-left: 40%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.Cont_Button button {
+  max-width: 100%;
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 100%;
+    margin: 1em 0.8em;
+  
+    &.type3 {
+      color: #ffffff;
+  
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border: 5px solid;
+        transition: all 0.6s ease;
+        border-radius: 2px;
+      }
+  
+      &::after {
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: #240b36;
+        border-right-color: #240b36;
+      }
+  
+      &::before {
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #240b36;
+        border-left-color: #240b36;
+      }
+  
+      &:hover::after,
+      &:hover::before {
+        border-bottom-color: #180425;
+        border-right-color: #180425;
+        border-top-color: #180425;
+        border-left-color: #180425;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
+  
