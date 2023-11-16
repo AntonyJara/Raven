@@ -1,8 +1,8 @@
 /*Encabezado header*/
 .Header{
-  background: #c31432;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4b0813;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #051021 , #051021);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #051021 , #051021); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
     display: grid;
     grid-template-columns: 10% 90%;
@@ -51,8 +51,8 @@
         right: 0;
         border-top-color: transparent;
         border-left-color: transparent;
-        border-bottom-color: #240b36;
-        border-right-color: #240b36;
+        border-bottom-color: #c5beb8 ;
+        border-right-color: #c5beb8 ;
       }
   
       &::before {
@@ -60,16 +60,16 @@
         left: 0;
         border-bottom-color: transparent;
         border-right-color: transparent;
-        border-top-color: #240b36;
-        border-left-color: #240b36;
+        border-top-color: #c5beb8 ;
+        border-left-color: #c5beb8 ;
       }
   
       &:hover::after,
       &:hover::before {
-        border-bottom-color: #180425;
-        border-right-color: #180425;
-        border-top-color: #180425;
-        border-left-color: #180425;
+        border-bottom-color: #c5beb8 ;
+        border-right-color: #c5beb8 ;
+        border-top-color: #c5beb8 ;
+        border-left-color: #c5beb8 ;
         width: 100%;
         height: 100%;
       }

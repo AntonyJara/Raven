@@ -1,5 +1,8 @@
 
-
+.Bloque1_ContenidoIndex h1{
+    border: solid;
+    color:  #c5beb8 ;
+}
 .Bloque2_ContenidoIndex{
     display: grid;
     grid-template-columns: 30% 40% 30%;
