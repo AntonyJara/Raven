@@ -17,7 +17,7 @@
         
             <img  class="logo_header" src="IMG/raven_header.png" >
             <div class="Cont_Button">
-                <button class="button type3">
+                <button onclick="scrollToSection()" class="button type3">
                     Boton1
                 </button>
               
@@ -28,33 +28,9 @@
               </div>
               
         </header>
-        <div class="Titulo1"><h1>Test Psicologico de Raven</h1></div>
+        <div class="Titulo1"><h1>Test Psicologico<br>de Raven</h1></div>
+        <div id="destino" class="Titulo1"><h1>Test Psicologico<br>de Raven</h1></div>
        
         <script src="JS/JS_Bg_animation.js"></script>
-        <script>
-            function cargarContenido() {
-                // Ruta relativa al archivo ContenidoIndex.html
-                const rutaContenido = 'ContenidoIndex.html';
-    
-                // Utiliza fetch para cargar el contenido del archivo
-                fetch(rutaContenido)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('No se pudo cargar el contenido');
-                        }
-                        return response.text();
-                    })
-                    .then(html => {
-                        // Actualiza el contenido del elemento con id 'contenido'
-                        document.getElementById('contenido').innerHTML = html;
-                    })
-                    .catch(error => console.error('Error al cargar el contenido:', error));
-            }
-    
-            // Llama a cargarContenido automáticamente al cargar la página
-            document.addEventListener('DOMContentLoaded', function () {
-                cargarContenido();
-            });
-        </script>
     </body>
 </html>
