@@ -2,9 +2,9 @@
 .Header{
   margin: -0.5rem;
   margin-top: -1rem;
-  background: #051021  ;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #051021  , #051021 );  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #051021  , #051021 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0d1a3b  ;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left,  #d7540f  , #0d1a3b  );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,  #d7540f , #0d1a3b  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   max-height: 15%;
    display: flex;
  
@@ -35,7 +35,7 @@
     margin: 2em 1.5em;
   
     &.type3 {
-      color: #ffffff;
+      color: #0d1a3b;
   
       &::after,
       &::before {
@@ -55,8 +55,8 @@
         right: 0;
         border-top-color: transparent;
         border-left-color: transparent;
-        border-bottom-color: #c5beb8 ;
-        border-right-color: #c5beb8 ;
+        border-bottom-color: #0d1a3b ;
+        border-right-color: #0d1a3b ;
       }
   
       &::before {
@@ -64,16 +64,16 @@
         left: 0;
         border-bottom-color: transparent;
         border-right-color: transparent;
-        border-top-color: #c5beb8 ;
-        border-left-color: #c5beb8 ;
+        border-top-color: #0d1a3b ;
+        border-left-color: #0d1a3b ;
       }
   
       &:hover::after,
       &:hover::before {
-        border-bottom-color: #c5beb8 ;
-        border-right-color: #c5beb8 ;
-        border-top-color: #c5beb8 ;
-        border-left-color: #c5beb8 ;
+        border-bottom-color: #0d1a3b ;
+        border-right-color: #0d1a3b ;
+        border-top-color: #0d1a3b ;
+        border-left-color: #0d1a3b ;
         width: 150%;
         height: 250%;
       }

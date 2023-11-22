@@ -1,5 +1,37 @@
 .Titulo1{
+    background-image: url("../IMG/Bg_Index.png");
+    border: solid;
+    border-width: 0.1px;
+    border-color: #0d1a3b;
+    margin-top: 0.5rem;
+    padding-bottom: -1rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -3rem;
+    
+
+}
+.Titulo1 h1{
     text-align: center;
-    font-size: 300%;
+    font-size:5rem;
+    font-size: clamp(3rem,9vw,6rem);
+    font-family: "poppins";
+    color: #da4e0d ;
+    text-shadow:    0 0 20px #0d1a3b    ,
+                    0 0 30px #0d1a3b  ,
+                    0 0 40px #234172 ,
+                    0 0 50px #234172 ;
+    padding-top: 14.5%;
+    padding-bottom: 14.5%;
+    margin-top: 0.5rem;
+}
+.Titulo1 h1:hover{
+    color: #0d1a3b;
+    text-shadow:    0 0 20px #c3150c   ,
+                    0 0 30px #c3150c ,
+                    0 0 40px #da4e0d,
+                    0 0 50px #da4e0d;
 
 }
