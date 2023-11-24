@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="CSS_Estilos/CSS_Test.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Imagen</title>
+</head>
+<body>
+
+<div id="imagenContainer" class="Placa_Container">
+    <div><img id="miImagen"  src="IMG/Placas/1.png" alt="Imagen 1"></div>
+
+    <div><button onclick="cambiarImagen()">Alternativa</button></div>
+</div>
+
+
+
+<script>
+    var imagenActual = 1;
+    var limiteImagenes = 60;  // Establece el límite de imágenes
+
+    function cambiarImagen() {
+        var imagen = document.getElementById("miImagen");
+
+        // Incrementa la variable y vuelve a 1 si alcanza el límite
+        imagenActual = (imagenActual % limiteImagenes) + 1;
+
+        // Construye la ruta de la imagen
+        var nuevaRuta = "IMG/Placas/"+imagenActual + ".png";
+
+        imagen.src = nuevaRuta;
+        imagen.alt = "Imagen " + imagenActual;
+    }
+</script>
+
+</body>
+</html>
