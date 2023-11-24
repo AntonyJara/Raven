@@ -1,0 +1,12 @@
+.Placa_Container{
+    max-width: 100%;
+    text-align: center;
+    display: block;
+}
+.Placa_Container img{
+    width: 30%;
+}
+.Placa_Container button{
+    margin-left: auto;
+    margin-right: auto;
+}
