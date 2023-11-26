@@ -7,11 +7,20 @@
     <title>Cambio de Imagen</title>
 </head>
 <body>
-
+    <div id="miDiv" >Placa 1</div>
 <div id="imagenContainer" class="Placa_Container">
-    <div><img id="miImagen"  src="IMG/Placas/1.png" alt="Imagen 1"></div>
+    <button id="b1" class="b1" onclick="cambiarImagen()" style="top: 65%;  left: 30%; "></button>
+    <button id="b2" class="b2" onclick="cambiarImagen()" style="top: 65%;  left: 47%; "></button>
+    <button id="b3" class="b3" onclick="cambiarImagen()" style="top: 65%;  left: 63%; "></button>
+    <button id="b4" class="b4" onclick="cambiarImagen()" style="top: 87%;  left: 30%; "></button>
+    <button id="b5" class="b5" onclick="cambiarImagen()" style="top: 87%;  left: 47%; "></button>
+    <button id="b6" class="b6" onclick="cambiarImagen()" style="top: 87%;  left: 63%; "></button>
+    
 
-    <div><button onclick="cambiarImagen()">Alternativa</button></div>
+    <img id="miImagen"  src="IMG/Placas/1.png" alt="Imagen 1">
+
+
+
 </div>
 
 
@@ -31,6 +40,39 @@
 
         imagen.src = nuevaRuta;
         imagen.alt = "Imagen " + imagenActual;
+
+         let miDiv = document.getElementById('miDiv');
+         miDiv.textContent = 'Placa ' + imagenActual;
+
+
+         // Obtenemos el contenedor de botones por su id
+         let contenedorBotones = document.getElementById('imagenContainer');
+
+        // Si el contador llega a 25, eliminamos los 6 botones originales y agregamos 8 nuevos
+        if (imagenActual === 25) {
+            // Eliminamos los 6 botones originales
+            for (let i = 1; i <= 6; i++) {
+            let botonAntiguo = document.getElementById('b' + i);
+            botonAntiguo.parentNode.removeChild(botonAntiguo);
+            }
+
+            // Agregamos 8 nuevos botones
+            for (let i = 1; i <= 8; i++) {
+                let nuevoBoton = document.createElement('button');  
+                nuevoBoton.id = 'b' + i;
+                nuevoBoton.className = 'b' + i;
+                         if(i==1){ nuevoBoton.style="top: 64.5%;  left: 29%;"}
+                    else if(i==2){ nuevoBoton.style="top: 64.5%;  left: 41%;"}
+                    else if(i==3){ nuevoBoton.style="top: 64.5%;  left: 53%;"}
+                    else if(i==4){ nuevoBoton.style="top: 64.5%;  left: 64.5%;"}
+                    else if(i==5){ nuevoBoton.style="top: 87%;  left: 29%; "}
+                    else if(i==6){ nuevoBoton.style="top: 87%;  left: 41%; "}
+                    else if(i==7){ nuevoBoton.style="top: 87%;  left: 53%; "}
+                    else if(i==8){ nuevoBoton.style="top: 87%;  left: 64.5%;"}
+                nuevoBoton.onclick = cambiarImagen;
+                contenedorBotones.appendChild(nuevoBoton);
+            }
+        }
     }
 </script>
 
