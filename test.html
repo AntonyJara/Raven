@@ -7,14 +7,14 @@
     <title>Cambio de Imagen</title>
 </head>
 <body>
-    <div id="miDiv" >Placa 1</div>
+    <div id="miDiv" ></div>
 <div id="imagenContainer" class="Placa_Container">
-    <button id="b1" class="b1" onclick="cambiarImagen()" style="top: 65%;  left: 30%; "></button>
-    <button id="b2" class="b2" onclick="cambiarImagen()" style="top: 65%;  left: 47%; "></button>
-    <button id="b3" class="b3" onclick="cambiarImagen()" style="top: 65%;  left: 63%; "></button>
-    <button id="b4" class="b4" onclick="cambiarImagen()" style="top: 87%;  left: 30%; "></button>
-    <button id="b5" class="b5" onclick="cambiarImagen()" style="top: 87%;  left: 47%; "></button>
-    <button id="b6" class="b6" onclick="cambiarImagen()" style="top: 87%;  left: 63%; "></button>
+    <button id="b1" class="b1" onclick=" Alt1();cambiarImagen();" style="top: 65%;  left: 30%; "></button>
+    <button id="b2" class="b2" onclick=" Alt2();cambiarImagen();" style="top: 65%;  left: 47%; "></button>
+    <button id="b3" class="b3" onclick="Alt3();cambiarImagen(); " style="top: 65%;  left: 63%; "></button>
+    <button id="b4" class="b4" onclick= "Alt4();cambiarImagen();" style="top: 87%;  left: 30%; "></button>
+    <button id="b5" class="b5" onclick=" Alt5();cambiarImagen();" style="top: 87%;  left: 47%; "></button>
+    <button id="b6" class="b6" onclick=" Alt6();cambiarImagen();" style="top: 87%;  left: 63%; "></button>
     
 
     <img id="miImagen"  src="IMG/Placas/1.png" alt="Imagen 1">
@@ -27,9 +27,185 @@
 
 <script>
     var imagenActual = 1;
+    var aux=0;
+    var Puntaje = 0;
     var limiteImagenes = 60;  // Establece el límite de imágenes
-
+    function Alt1(){
+        switch(imagenActual){
+            case 3: Puntaje=Puntaje+1;
+                break;
+            case 9: Puntaje=Puntaje+1;
+                break;
+            case 15: Puntaje=Puntaje+1;
+                break;
+            case 17: Puntaje=Puntaje+1;
+                break;
+            case 32: Puntaje=Puntaje+1;
+                break;
+            case 35: Puntaje=Puntaje+1;
+                break;
+            case 45: Puntaje=Puntaje+1;
+                break;
+            case 53: Puntaje=Puntaje+1;
+                break;
+            case 57: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
+    function Alt2(){
+        switch(imagenActual){
+            case 4: Puntaje=Puntaje+1;
+                break;
+            case 8: Puntaje=Puntaje+1;
+                break;
+            case 13: Puntaje=Puntaje+1;
+                break;
+            case 16: Puntaje=Puntaje+1;
+                break;
+            case 26: Puntaje=Puntaje+1;
+                break;
+            case 36: Puntaje=Puntaje+1;
+                break;
+            case 46: Puntaje=Puntaje+1;
+                break;
+            case 52: Puntaje=Puntaje+1;
+                break;
+            case 55: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
+    function Alt3(){
+        switch(imagenActual){
+            case 6: Puntaje=Puntaje+1;
+                break;
+            case 10: Puntaje=Puntaje+1;
+                break;
+            case 18: Puntaje=Puntaje+1;
+                break;
+            case 22: Puntaje=Puntaje+1;
+                break;
+            case 27: Puntaje=Puntaje+1;
+                break;
+            case 37: Puntaje=Puntaje+1;
+                break;
+            case 39: Puntaje=Puntaje+1;
+                break;
+            case 59: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
+    function Alt4(){
+        switch(imagenActual){
+            case 1: Puntaje=Puntaje+1;
+                break;
+            case 12: Puntaje=Puntaje+1;
+                break;
+            case 21: Puntaje=Puntaje+1;
+                break;
+            case 23: Puntaje=Puntaje+1;
+                break;
+            case 30: Puntaje=Puntaje+1;
+                break;
+            case 38: Puntaje=Puntaje+1;
+                break;
+            case 44: Puntaje=Puntaje+1;
+                break;
+            case 56: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
+    function Alt5(){
+        switch(imagenActual){
+            case 2: Puntaje=Puntaje+1;
+                break;
+            case 11: Puntaje=Puntaje+1;
+                break;
+            case 19: Puntaje=Puntaje+1;
+                break;
+            case 24: Puntaje=Puntaje+1;
+                break;
+            case 31: Puntaje=Puntaje+1;
+                break;
+            case 43: Puntaje=Puntaje+1;
+                break;
+            case 47: Puntaje=Puntaje+1;
+                break;
+            case 54: Puntaje=Puntaje+1;
+                break;
+            case 60: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
+    function Alt6(){
+        switch(imagenActual){
+            case 5: Puntaje=Puntaje+1;
+                break;
+            case 7: Puntaje=Puntaje+1;
+                break;
+            case 14: Puntaje=Puntaje+1;
+                break;
+            case 20: Puntaje=Puntaje+1;
+                break;
+            case 34: Puntaje=Puntaje+1;
+                break;
+            case 42: Puntaje=Puntaje+1;
+                break;
+            case 48: Puntaje=Puntaje+1;
+                break;
+            case 50: Puntaje=Puntaje+1;
+                break;
+            case 58: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
+    function Alt7(){
+        switch(imagenActual){
+            case 29: Puntaje=Puntaje+1;
+                break;
+            case 33: Puntaje=Puntaje+1;
+                break;
+            case 40: Puntaje=Puntaje+1;
+                break;
+            case 49: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+    }
+    function Alt8(){
+        switch(imagenActual){
+            case 25: Puntaje=Puntaje+1;
+                break;
+            case 28: Puntaje=Puntaje+1;
+                break;
+            case 41: Puntaje=Puntaje+1;
+                break;
+            case 51: Puntaje=Puntaje+1;
+                break;
+            default:
+        }
+        let miDiv = document.getElementById('miDiv');
+            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+    }
     function cambiarImagen() {
+
         var imagen = document.getElementById("miImagen");
 
         // Incrementa la variable y vuelve a 1 si alcanza el límite
@@ -41,8 +217,7 @@
         imagen.src = nuevaRuta;
         imagen.alt = "Imagen " + imagenActual;
 
-         let miDiv = document.getElementById('miDiv');
-         miDiv.textContent = 'Placa ' + imagenActual;
+       
 
 
          // Obtenemos el contenedor de botones por su id
@@ -69,11 +244,45 @@
                     else if(i==6){ nuevoBoton.style="top: 87%;  left: 41%; "}
                     else if(i==7){ nuevoBoton.style="top: 87%;  left: 53%; "}
                     else if(i==8){ nuevoBoton.style="top: 87%;  left: 64.5%;"}
-                nuevoBoton.onclick = cambiarImagen;
+                
+                
+                    nuevoBoton.onclick = function() {
+                        
+                        switch (i) {
+                            case 1:
+                                Alt1();
+                                break;
+                            case 2:
+                                Alt2();
+                                break;
+                            case 3:
+                                Alt3();
+                                break;
+                            case 4:
+                                Alt4();
+                                break;
+                            case 5:
+                                Alt5();
+                                break;
+                            case 6:
+                                Alt6();
+                                break;
+                            case 7:
+                                Alt7();
+                                break;
+                            case 8:
+                                Alt8();
+                                break;
+    
+                            default:
+                        }
+                        cambiarImagen();
+                    };
+                
                 contenedorBotones.appendChild(nuevoBoton);
             }
         }
-      
+       
         if (imagenActual === 60) {
         window.location.href = 'index.html'; 
         }
