@@ -9,7 +9,10 @@
 <body>
     <div class="Test_Header">
         <h1>Resultados</h1>
-        <div id="miDiv" ></div>
+        <div id="Punt" ></div>
+        <div id="Cap" ></div>
+        <div id="Intg" ></div>
+        
     </div>
     
 
@@ -22,8 +25,27 @@
 <script>
         var urlParams = new URLSearchParams(window.location.search);
         var Puntaje = urlParams.get('Puntaje');
-    let miDiv = document.getElementById('miDiv');
-    miDiv.textContent = ' Puntos: '+Puntaje;
+        let Punt = document.getElementById('Punt');
+        let Cap = document.getElementById('Cap');
+        let Intg = document.getElementById('Intg');
+        if(Puntaje<13){
+            Cap.textContent = 'Pertenece: 95% de los sujetos';
+            Intg.textContent = 'Rango Intelectual: Deficiencia Intelectual';
+        }else if(Puntaje<25){
+            Cap.textContent = 'Pertenece: entre el 75% y el 90% de los sujetos';
+            Intg.textContent = 'Rango Intelectual: Inferior al Termino Medio';
+        }else if(Puntaje<37){
+            Cap.textContent = 'Pertenece: 50% de los sujetos';
+            Intg.textContent = 'Rango Intelectual: Termino Medio';
+        }else if(Puntaje<49){
+            Cap.textContent = 'Pertenece: entre el 10% y el 25% de los sujetos';
+            Intg.textContent = 'Rango Intelectual: Superior al Termino Medio';
+        }else if(Puntaje<61){
+            Cap.textContent = 'Pertenece: 5% de los sujetos';
+            Intg.textContent = 'Rango Intelectual: Superioridad Intelectual';
+        }
+    
+        Punt.textContent = ' Puntaje: '+Puntaje;
 </script>
 </body>
 </html>
