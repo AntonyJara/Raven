@@ -119,4 +119,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: -3rem;
+    text-align: center;
+    background-color: #030b1f;
+}
+.Titulo3 a{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow:    0 0 20px #c3150c   ,
+                    0 0 30px #c3150c ,
+                    0 0 40px #da4e0d,
+                    0 0 50px #da4e0d;
 }
