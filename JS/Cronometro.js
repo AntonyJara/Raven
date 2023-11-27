@@ -19,7 +19,7 @@
             // Verificamos si el tiempo ha llegado a cero
             if (tiempoRestante < 0) {
                 // Redirigimos a otra página al finalizar el tiempo
-                window.location.href = 'index.html';
+                window.location.href = 'Resultados.html'+params(Puntaje);
             } else {
                 // Llamamos a la función nuevamente después de 1 segundo (1000 milisegundos)
                 setTimeout(actualizarCronometro, 1000);
