@@ -4,14 +4,14 @@
   <link rel="stylesheet" href="CSS_Estilos/CSS_Test.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cambio de Imagen</title>
+    <title>TestRavenonline</title>
 </head>
 <body>
     <div class="Test_Header">
         <h1>Test de Raven Online</h1>
         <h2>Explora patrones en las matrices de símbolos. Elige respuestas lógicas. El tiempo limite es de 40 minutos, pero no te desesperes. ¡Prepárate para el Test de Raven en línea ahora!</h2>
         <p id="cronometro">Tiempo restante: 40:00</p>
-        <div id="miDiv" ></div>
+        <div id="miDiv" >Placas: 1 Puntaje:0</div>
     </div>
     
 <div id="imagenContainer" class="Placa_Container">
@@ -59,7 +59,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
+            imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;
     }
     function Alt2(){
         switch(imagenActual){
@@ -84,8 +86,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
-    }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;    }
     function Alt3(){
         switch(imagenActual){
             case 6: Puntaje=Puntaje+1;
@@ -107,8 +110,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
-    }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;    }
     function Alt4(){
         switch(imagenActual){
             case 1: Puntaje=Puntaje+1;
@@ -130,8 +134,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
-    }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;    }
     function Alt5(){
         switch(imagenActual){
             case 2: Puntaje=Puntaje+1;
@@ -155,8 +160,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
-    }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;    }
     function Alt6(){
         switch(imagenActual){
             case 5: Puntaje=Puntaje+1;
@@ -180,8 +186,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
-    }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;    }
     function Alt7(){
         switch(imagenActual){
             case 29: Puntaje=Puntaje+1;
@@ -194,6 +201,9 @@
                 break;
             default:
         }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--; 
     }
     function Alt8(){
         switch(imagenActual){
@@ -208,8 +218,9 @@
             default:
         }
         let miDiv = document.getElementById('miDiv');
-            miDiv.textContent = imagenActual + ' Placa ' + Puntaje;
-    }
+        imagenActual++;
+            miDiv.textContent = 'Placa:'+ imagenActual + ' Puntos: ' + Puntaje;
+            imagenActual--;    }
     function cambiarImagen() {
 
         var imagen = document.getElementById("miImagen");
@@ -290,7 +301,7 @@
         }
        
         if (imagenActual === 60) {
-        window.location.href = 'index.html'; 
+        window.location.href = 'Resultados.html?Puntaje='+Puntaje; 
         }
     }
 </script>

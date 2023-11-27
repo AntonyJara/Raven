@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="CSS_Estilos/CSS_Test.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestRavenOnlineResultados</title>
+</head>
+<body>
+    <div class="Test_Header">
+        <h1>Resultados</h1>
+        <div id="miDiv" ></div>
+    </div>
+    
+
+
+
+</div>
+
+
+
+<script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var Puntaje = urlParams.get('Puntaje');
+    let miDiv = document.getElementById('miDiv');
+    miDiv.textContent = ' Puntos: '+Puntaje;
+</script>
+</body>
+</html>
